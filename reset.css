@@ -1,0 +1,66 @@
+/**
+ * 1. set box-sizing as border-box
+ *   the difference between content-box & border-box:
+ *   https://developer.mozilla.org/zh-CN/docs/Web/CSS/box-sizing
+ * 2. set the base font-size of html as 10px 10px / 16px = 62.5%
+ * 3. correct line height for all browsers
+ * 4. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  box-sizing: border-box; /* 1 */
+  font-size: 62.5%; /* 2 */
+  line-height: 1.15; /* 3 */
+  -ms-text-size-adjust: 100%; /* 4 */
+  -webkit-text-size-adjust: 100%; /* 4 */
+}
+
+/**
+ * 1. box-sizing inherit for all browsers
+ * 2. remove repeating backgrounds in all browsers
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* 1 */
+  background-repeat: no-repeat; /* 2 */
+}
+
+/**
+ * 1. remove body margin
+ * 2. set the base font size
+ * 3. set the font smoothing
+ * 4. set the default font family
+ */
+body {
+  margin: 0; /* 1 */
+  font-size: 1.6rem; /* 2 */
+  -webkit-font-smoothing: antialiased; /* 3 */
+  -moz-osx-font-smoothing: grayscale; /* 3 */
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+		'Segoe UI Emoji',
+		'Segoe UI Symbol'; /* 4 */
+}
+
+/**
+ * remove outline from `:focus` pseudo element
+ */
+:focus {
+  outline: 0;
+}
+
+/**
+ * remove link text decoration
+ */
+a {
+  text-decoration: none;
+}
+
+/**
+ * remove default list style
+ */
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
